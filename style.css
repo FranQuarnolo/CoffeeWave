@@ -1,0 +1,401 @@
+/*----------------------------------------------------------------*/
+/*INICIO*/
+/*----------------------------------------------------------------*/
+header{
+	width: 960px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: -20px;
+	background-color: #695958;
+	padding: 0px;
+}
+
+@font-face{
+		font-family:'deco';
+		src: url(fonts/Market_Deco.ttf) 
+		format('truetype');
+}
+@font-face{
+		font-family:'rose';
+		src: url(fonts/Bellerose.ttf) 
+		format('truetype');
+}
+
+#logotipo{
+	width: 400px;
+	height: 90px;
+	margin-left: 280px;
+	text-align: center;
+}
+#logotipo h1{
+	color: #E7D8C9;
+	font-family:'deco'; 
+	font-size: 60px;
+	margin-top: 20px;
+}
+
+#bienvenida{
+	width: 300px;
+	height: 30px;
+	margin-left: 330px;
+	float: none;
+	text-align:center;
+}
+
+#saldo{
+	width: 120px;
+	height: 35px;
+	margin-left: 10px;
+	float: left;
+	text-align:center;
+}
+
+#nombre{
+	font-family:'deco'; 
+	font-size: 20px;
+	color: #EEE4E1; 
+}
+#saldoDis{
+	font-family:'deco'; 
+	font-size: 20px;
+	color: #EEE4E1; 
+}
+
+#redes{
+	width: 240px;
+	height: 35px;
+	float: right;
+	padding: 0px;
+}
+#redes ul{
+	list-style-type: none;
+}
+#redes ul li{
+	display: inline;
+	margin-left: 20px;
+}
+#redes ul li a{
+	display: inline-block;
+	margin-right: 0px;	
+}
+#redes	img{
+	width: 30px;
+	height: 30px;
+}
+
+/*----------------------------------------------------------------*/
+#inicio{
+	width: 960px;
+	height: 1610px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #4c5760;
+}
+
+#menu{
+	width: 100%;
+	height: 40px;
+	margin-top: 0px;
+	padding: 0px;
+	background-color: #C8B888;
+}
+#menu ul{
+	list-style-type: none;
+}
+
+#menu ul li{
+	display: inline;
+}
+#menu ul li a{
+	display: inline-block;
+	height: 40px;
+	width: 320px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-line: none;
+	color: #000000;
+	font-family:'deco'; 
+	font-size: 20px;
+}
+
+#menu p{
+	margin-top: 10px;
+}
+
+#menu a:hover{
+	background-color: #b2945b;
+	height: 40px;
+	margin-top: 0px;
+}
+
+#btnInicio{
+	margin-left: -40px;
+}
+#btnMenus{
+	margin-left: -5px;
+}
+#btnContacto{
+	margin-left: -5px;
+}
+
+#foto1{
+	width: 900px;
+	height: 550px;
+	float: left;
+	padding: 5px 5px 5px 5px;
+	margin-left: 25px;
+	margin-top: 15px;
+	background-color: #ffffff;
+}
+
+#lugar1{
+	width: 900px;
+	height: 550px;
+}
+
+#texto1{
+	width: 300px;
+	height: 400px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 25px;
+	text-align: left;
+}
+#texto1 h3{
+	font-family:'rose'; 
+	font-size: 16px;
+	font-weight: 100;
+	font-stretch: condensed;
+	color: #ffffff;
+}
+
+#posters{
+	width: 570px;
+	height: 420px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+#poster1{
+	float: left;
+	width: 270px;
+	height: 420px;
+}
+#poster2{
+	float: right;
+	width: 290px;
+	height: 420px;
+}
+
+
+#irMenu ul{
+	list-style-type: none;
+}
+
+#irMenu ul li{
+	display: inline;
+}
+#irMenu ul li a{
+	display: inline-block;
+	height: 40px;
+	width: 220px;
+	padding: 0px;
+	float: none;
+	margin-top: 40px;
+	margin-left: 320px;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-line: none;
+	color: #ffffff;
+	font-family:'deco'; 
+	font-size: 20px;
+	background-color: #695958;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+}
+#irMenu p{
+	margin-top: 10px;
+}
+
+#irMenu a:hover{
+	background-color: #c8b888;
+	color: #000000;
+}
+
+#foto2{
+	width: 320px;
+	height: 320px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding: 2px 2px 2px 2px;
+	background-color: #ffffff;
+}
+#granos{
+	width: 320px;
+	height: 320px;
+}
+#foto3{
+	width: 570px;
+	height: 400px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
+	padding: 2px 2px 2px 2px;
+	background-color: #ffffff;
+}
+#grupal{
+	width: 570px;
+	height: 400px;
+}
+
+/*----------------------------------------------------------------*/
+footer{
+	width: 960px;
+	height: 130px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	background-color: #929487;
+}
+
+h4{
+	width: 100px;
+	margin-left: 430px;
+	margin-top: 0px;
+	color: #E7D8C9;
+	font-family:'deco'; 
+	font-size: 50px;
+}
+#imagenPie{
+	width: 60px;
+	height: 60px;
+	padding: 0px;
+	float: left;
+	margin-top: -80px;
+	margin-left: 435px;
+	text-align: center;
+}
+#taza{
+	width: 60px;
+	height: 60px;
+}
+#derechos{
+	color: #000000;
+	font-family:'rose'; 
+	font-weight: bold;
+	font-size: 12px;
+	float: right;
+	margin-top: -30px;
+	margin-right: 430px;
+}
+
+
+
+
+/*----------------------------------------------------------------*/
+/*MENU*/
+/*----------------------------------------------------------------*/
+#menus{
+	width: 960px;
+	height: 2320px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #4c5760;
+}
+
+#productos{
+	width: 960px;
+	height: 100%;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+/*PRODUCTO 1*/
+#p1{
+	width: 400px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	text-align: center;
+	float: left;
+}
+#p1 img{
+	height: auto;
+}
+#p2{
+	width: 400px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-right: 40px;
+	text-align: center;
+	float: right;
+}
+#p2 img{
+	height: auto;
+}
+
+
+#nombreP{
+	width: 380px;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	background-color: #000000;
+}
+#nombreP p{
+	color: #ffffff;
+	padding: 2px 2px;
+	font-family:'deco'; 
+	font-size: 20px;
+	text-align: center;
+}
+
+#imagenP{
+	width: 380px;
+	height: 260px;
+	text-align-last: center;
+}
+
+#precioCaja{
+	width: 380px;
+	height: 30px;
+	margin-left: 10px;
+	padding: 0px;
+	float: none;
+	background-color: #000000;
+}
+
+#total{
+	color: #ffffff;
+	padding: 5px 5px;
+	font-family:'deco'; 
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+	text-align: center;
+}
+
+.precio{
+	color: #ffffff;
+	width: auto;
+	padding: 4px 4px;
+	font-family:'deco'; 
+	font-size: 20px;
+	margin-top: 0px;
+	margin-right: 15px;
+	float: right;
+	text-align: center;
+}
