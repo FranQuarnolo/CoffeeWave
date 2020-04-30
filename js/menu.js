@@ -21,15 +21,15 @@ for (var i = 0; i < preciosP.length; i++) {
 		preciosP[i].style.color='#ad230e';
 	}
 }
-	
+
 
 // for (i = 0; i < document.getElementsByClassName('precio').length; i++){
-        
+
 
 //     var valor = document.getElementsByClassName('precio')[i];
-    
+
 //     var valor2 = valor.textContent;
-    
+
 //     alert(valor2);
-        
-// }      
+
+// }
