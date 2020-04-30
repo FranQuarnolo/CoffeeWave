@@ -18,7 +18,7 @@ for (var i = 0; i <= preciosP.length; i++) {
 
 	if(saldo < preciosP[i].textContent){
 
-		preciosP[i].style.color='#ad230e';
+		preciosP[i].style.color='#ad230e';//
 	}
 }
 	
