@@ -12,11 +12,11 @@ preciosP = document.getElementsByClassName ('precio');
 console.log('El saldo actual es de: '+saldo);
 
 
-for (var i = 0; i <= preciosP.length; i++) {
+for (var i = 0; i < preciosP.length; i++) {
 
 	console.log(preciosP[i].textContent);
 
-	if(saldo < preciosP[i].textContent){
+	if(parseInt(saldo) < parseInt(preciosP[i].textContent)){
 
 		preciosP[i].style.color='#ad230e';
 	}
