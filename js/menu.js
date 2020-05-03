@@ -36,6 +36,3 @@ for (var i = 0; i < edades.length; i++) {
 		preciosP[i].style.color='#ad230e';
 	}
 }
-
-
-	    

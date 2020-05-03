@@ -194,8 +194,6 @@ header{
 	width: 290px;
 	height: 420px;
 }
-
-
 #irMenu ul{
 	list-style-type: none;
 }
@@ -523,15 +521,14 @@ header{
 	width: 120px;
 	height: 30px;
 	margin-left: 0px;
-	margin-top: 18px;
+	margin-top: 15px;
 }
 #nombre{
 	font-size: 18px;
 }
 #saldoDis{
-	font-size: 18px;
+	font-size: 22px;
 }
-
 #redes{
 	width: 40px;
 	height: 145px;
@@ -553,7 +550,6 @@ header{
 	width: 580px;
 	height: 150px;
 }
-
 #menu ul li{
 	display: block;
 }
@@ -716,3 +712,326 @@ h4{
 #formulario{
 	margin-left: 65px;
 }
+/*----------------------------------------------------------------*/
+}
+/* FIN @MEDIA 600px a 1023px TABLETS  */
+/*----------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------*/
+/*Inicio @Media PHONES*/
+/*------------------------------------------------*/
+@media all and (max-width: 599px){
+	/*----------------------------------------------------------------*/
+	/*ENCABEZADO*/
+	/*----------------------------------------------------------------*/
+	header{
+		width: 90%;
+		height: 150px;
+	}
+	#logotipo{
+		width: 100%;
+		height: 50px;
+		margin-left: 0px;
+	}
+	#logotipo h1{
+		font-size: 40px;
+	}
+	#bienvenida{
+		width: 100%;
+		height: 20px;
+		margin-left:0px;
+		margin-top: 35px;
+	}
+	#saldo{
+		width: 100%;
+		height: 20px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	#nombre{
+		margin-top: 0px;
+		font-size: 15px;
+	}
+	#saldoDis{
+		font-size: 18px;
+	}
+	#redes{
+		width: 80%;
+		height: 20px;
+		float: none;
+		text-align: center;
+		margin-right: 20px;
+	}
+	#redes ul li{
+		margin-left: 22px;
+	}
+	#redes	img{
+		width: 20px;
+		height: 20px;
+	}
+	/*----------------------------------------------------------------*/
+	/*INICIO*/
+	/*----------------------------------------------------------------*/
+	#inicio{
+		width: 90%;
+		height: 100%;
+		text-align: center;
+	}
+	#menu{
+		width: 100%;
+		height: auto;
+	}
+	#menu ul li{
+		display: block;
+	}
+	#menu ul li a{
+		display: block;
+		width: 100%;
+		height: 30px;
+		font-size: 15px;
+		border-style: solid;
+		border-width: 0.1px;
+		border-color: #695958;
+	}
+	#menu p{
+		margin-top: 5px;
+	}
+	#menu a:hover{
+		height: 30px;
+	}
+	#btnInicio{
+		margin-left: -40px;
+	}
+	#btnMenus{
+		margin-left: -40px;
+	}
+	#btnContacto{
+		margin-left: -40px;
+	}
+	#foto1{
+		width: 96.8%;
+		height: auto;
+		float: none;
+		padding: 2px 2px 2px 2px;
+		margin-left: 3px;
+		margin-top: 10px;
+		background-color: #ffffff;
+	}
+	#lugar1{
+		width: 99%;
+		height: auto;
+		margin-top: 5px;
+	}
+	#texto1{
+		width: 90%;
+		height: auto;
+		float: none;
+		margin-left:10px;
+		text-align: center;
+	}
+	#texto1 h3{
+		font-family:'rose';
+		font-size: 10px;
+		font-weight: 100;
+		font-stretch: condensed;
+		color: #ffffff;
+	}
+	#posters{
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		margin-right: 0px;
+	}
+	#poster1{
+		float: none;
+		width: 96%;
+		height: auto;
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	#poster2{
+		float: none;
+		width: 96%;
+		height: auto;
+		margin-left: 0px;
+	}
+	#irMenu{
+		text-align: center;
+	}
+	#irMenu ul li a{
+		display: block;
+		height: 40px;
+		width: 100%;
+		margin-left: -20px;
+	}
+	#foto2{
+		width: 96%;
+		height: auto;
+		float: none;
+		margin-left: 3.7px;
+		margin-top: 40px;
+	}
+	#granos{
+		width: 100%;
+		height: auto;
+		margin-top: 5px;
+	}
+	#foto3{
+		width: 96%;
+		height: auto;
+		float: none;
+		margin-right: 0px;
+		margin-left: 3px;
+		margin-bottom: 10px;
+	}
+	#grupal{
+		width: 100%;
+		height: auto;
+		margin-top: 5px;
+	}
+
+	/*----------------------------------------------------------------*/
+	/*PIE DE PAGINA*/
+	/*----------------------------------------------------------------*/
+	footer{
+		width: 90%;
+		height: 50px;
+	}
+	h4{
+		width: 65px;
+		margin-left: 10px;
+		margin-top: 0px;
+		font-size: 40px;
+	}
+	#imagenPie{
+		width: 40px;
+		height: 40px;
+		float: none;
+		margin-top: -100px;
+		margin-left: 80px;
+		text-align: center;
+	}
+	#taza{
+		width: 40px;
+		height: 40px;
+	}
+	#derechos{
+		font-size: 11px;
+		float: none;
+		margin-top: -30px;
+		margin-right: 0px;
+		margin-left: 135px;
+	}
+
+	/*----------------------------------------------------------------*/
+	/*MENU*/
+	/*----------------------------------------------------------------*/
+	#menus{
+		width: 90%;
+		height: auto;
+	}
+	#productos{
+		width: 100%;
+		height: 100%;
+		margin-left: 0px;
+	}
+	/*PRODUCTO 1*/
+	#p1{
+		width: 100%;
+		margin-left: 0px;
+		float: none;
+	}
+	#p1 img{
+		width: 90%;
+	}
+	#p2{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+		float: none;
+	}
+	#p2 img{
+		width: 90%;
+	}
+	#nombreP{
+		width: 96%;
+		height: 20px;
+		margin-left: 5px;
+	}
+	#nombreP p{
+		font-size: 13px;
+	}
+	#precioCaja{
+		width:96% ;
+		height: 25px;
+		margin-left: 5px;
+	}
+	#total{
+		font-size: 10px;
+		margin-top: 2px;
+	}
+	.precio{
+		font-size: 13px;
+		margin-top: 2px;
+		margin-right: 2px;
+	}
+
+	/*----------------------------------------------------------------*/
+	/*CONTACTO*/
+	/*----------------------------------------------------------------*/
+	#contacto{
+		width: 90%;
+		height: 500px;
+	}
+	#titulo{
+		font-size: 13px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+	}
+	#formulario{
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+	}
+	#datos{
+		width: 90%;
+		height: auto;
+		margin-right: 0px;
+		margin-left: 2.8px;
+		border-radius: 15px;
+		border-width: 0.5px;
+	}
+	input{
+		width: 100%;
+		border-radius: 7px;
+		margin-left: -26px;
+		font-size: 12px;
+	}
+	#texto{
+		width: 98%;
+		border-radius: 7px;
+		margin-right:0px;
+		float: left;
+		margin-left: -26px;
+		font-size: 12px;
+	}
+	#btnEnviar{
+		width: 100%;
+		height: 35px;
+		border-style: solid;
+		border-radius: 7px;
+		margin-top: 20px;
+		font-size: 15px;
+	}
+/*----------------------------------------------------------------*/
+}
+/* FIN @MEDIA 599PX PHONES  */
+/*----------------------------------------------------------------*/
