@@ -36,12 +36,12 @@
 		<h1 id="titulo">Contactanos!</h1>
 		<fieldset id="datos">
 			<ul id="">
-				<li><input type="text" name="nombre" value="Ingrese su nombre" required></li>
-				<li><input type="email" name="correo" value="Correo Electronico" required></li>
-				<li><textarea id="texto">Mensaje...</textarea></li>
+				<li><input id="user" type="text" name="nombre" placeholder="Ingrese un Nombre" minlength="5" maxlength="20" pattern="[A-Za-z ]{1,32}" required></li>
+				<li><input id="email" type="email" name="correo" placeholder="Correo Electronico" required></li>
+				<li><textarea id="texto" minlength="5" maxlength="140"  placeholder="Cuentanos..." required></textarea></li>
 			</ul>
 		</fieldset>
-		<button id="btnEnviar">Enviar</button>
+		<input id="btnEnviar" type="submit" name="enviar" value="Enviar" placeholder="Enviar">
 
 	</form>
 </section>
@@ -52,5 +52,7 @@
 	</div>
 	<p id="derechos">© Derechos Reservados 2020</p>
 </footer>
+
+<script type="text/javascript" src="js/contacto.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
 /*----------------------------------------------------------------*/
 /*ENCABEZADO*/
 /*----------------------------------------------------------------*/
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 header{
 	width: 960px;
 	height: 150px;
@@ -62,6 +67,23 @@ header{
 	color: #EEE4E1;
 }
 
+#log{
+	width: 180px;
+	height: 30px;
+	float: right;
+	margin-top: -50px;
+}
+.singIn{
+	font-family:'deco';
+	font-size: 20px;
+	color: #EEE4E1;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+.singIn:hover{
+	color: #000000;
+	transition: 0.2s;
+}
 #redes{
 	width: 240px;
 	height: 35px;
@@ -82,8 +104,14 @@ header{
 #redes	img{
 	width: 30px;
 	height: 30px;
+	border-radius: 50%;
+	background-color: #695958;
 }
-
+#redes img:hover{
+	background-color: #695958;
+	transition: 0.2s;
+	box-shadow: 0 12px 10px 0 rgba(216,219,226,0.24), 0 15px 50px 0 rgba(216,219,226,0.19);
+}
 /*----------------------------------------------------------------*/
 /*INICIO*/
 /*----------------------------------------------------------------*/
@@ -96,7 +124,6 @@ header{
 	margin-bottom: 0px;
 	background-color: #4c5760;
 }
-
 #menu{
 	width: 100%;
 	height: 40px;
@@ -107,7 +134,6 @@ header{
 #menu ul{
 	list-style-type: none;
 }
-
 #menu ul li{
 	display: inline;
 }
@@ -125,17 +151,15 @@ header{
 	font-family:'deco';
 	font-size: 20px;
 }
-
 #menu p{
 	margin-top: 10px;
 }
-
 #menu a:hover{
 	background-color: #b2945b;
 	height: 40px;
 	margin-top: 0px;
+	transition: all 0.3s;
 }
-
 #btnInicio{
 	margin-left: -40px;
 }
@@ -145,7 +169,6 @@ header{
 #btnContacto{
 	margin-left: -5px;
 }
-
 #foto1{
 	width: 900px;
 	height: 550px;
@@ -155,12 +178,10 @@ header{
 	margin-top: 15px;
 	background-color: #ffffff;
 }
-
 #lugar1{
 	width: 900px;
 	height: 550px;
 }
-
 #texto1{
 	width: 300px;
 	height: 400px;
@@ -176,7 +197,6 @@ header{
 	font-stretch: condensed;
 	color: #ffffff;
 }
-
 #posters{
 	width: 570px;
 	height: 420px;
@@ -228,8 +248,8 @@ header{
 #irMenu a:hover{
 	background-color: #c8b888;
 	color: #000000;
+	cursor: pointer;
 }
-
 #foto2{
 	width: 320px;
 	height: 320px;
@@ -268,7 +288,6 @@ footer{
 	margin-top: 0px;
 	background-color: #929487;
 }
-
 h4{
 	width: 100px;
 	margin-left: 445px;
@@ -300,7 +319,98 @@ h4{
 	margin-right: 410px;
 }
 
+/*----------------------------------------------------------------*/
+/*REGISTRO MODAL*/
+/*----------------------------------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #d8dbe2;
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: all 0.5s;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #4c5760;
+  margin: 15% auto;
+  padding: 0px;
+  margin-top: 75px;
+  border: 1px solid #888;
+  width: 40%;
+  height: auto;
+  border-style: none;
+  border-radius: 2%;
+	text-align: center;
+}
+.close {
+  color: #000000;
+  float: right;
+  padding: 10px;
+  font-size: 30px;
+  font-family:'deco';
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration-line: none;
+  transition: all 3s;
+}
+.close:hover,
+.close:focus {
+  color: #970000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 32px;
+}
+#contactoTitle{
+  font-family:'deco';
+  font-size: 30px;
+  font-weight: bold;
+  color: #E7D8C9;
+  text-decoration: underline;
+}
+.input{
+  width: 70%;
+  height: 15px;
+	margin-left: 3%;
+  margin-top: 2%;
+  background-color: #d8dbe2;
+  border-style: none;
+  font-family:'rose';
+  font-size: 20px;
+  border-radius: 2%;
+	vertical-align: middle;
+}
+.input:focus{
+  outline: none;
+}
+.confirm{
+  width: 25%;
+  height: 30px;
+  margin-top: 2%;
+  background-color: #695958;
+	font-family:'deco';
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #695958;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+}
+.confirm:hover{
+  background-color: #c8b888;
+	color: #000000;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*MENU*/
 /*----------------------------------------------------------------*/
