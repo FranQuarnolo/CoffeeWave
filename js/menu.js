@@ -1,3 +1,4 @@
+
 var saldo = prompt('Ingrese su saldo disponible:');
 var edad = prompt('Ingrese su edad:');
 if (saldo == null || saldo == ""){

@@ -1,11 +1,12 @@
-/*----------------------------------------------------------------*/
-/*ENCABEZADO*/
-/*----------------------------------------------------------------*/
 body{
 	margin: 0;
 	padding: 0;
-	border: 0;
+	margin-top: -20px;
+	position: relative;
 }
+/*----------------------------------------------------------------*/
+/*ENCABEZADO*/
+/*----------------------------------------------------------------*/
 header{
 	width: 960px;
 	height: 150px;
@@ -65,8 +66,8 @@ header{
 	font-family:'deco';
 	font-size: 20px;
 	color: #EEE4E1;
-}
 
+}
 #log{
 	width: 180px;
 	height: 30px;
@@ -83,6 +84,60 @@ header{
 .singIn:hover{
 	color: #000000;
 	transition: 0.2s;
+}
+
+.cart{
+	width: 200px;
+	height: 35px ;
+	margin-left: 150px;
+}
+.cart-img{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.cart-img img{
+	width: auto;
+	height: 30px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.cart-cuerpo{
+	font-family:'deco';
+	font-size: 20px;
+	font-weight: bold;
+	color: #EEE4E1;
+	text-align:right;
+}
+.pTotal{
+	color: #C8B888;
+}
+#add-carro{
+	height: 30px;
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 35px;
+	color: #ffffff;
+	font-family:'deco';
+	font-size: 15px;
+	font-weight:bold;
+	background-color: #695958;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	text-decoration: none;
+	text-decoration-line: none;
+	text-align: center;
+	outline: none;
+}
+#add-carro:hover{
+	background-color: #c8b888;
+	color: #000000;
+	transition: 0.5s;
+	cursor: pointer;
 }
 #redes{
 	width: 240px;
@@ -332,10 +387,10 @@ h4{
   height: 100vh;
   overflow: hidden;
   background: #d8dbe2;
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.4);
   transition: all 0.5s;
 }
-/* Modal Content/Box */
+/* Modal Contenido */
 .modal-content {
   background-color: #4c5760;
   margin: 15% auto;
@@ -411,7 +466,6 @@ h4{
 
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
 /*MENU*/
 /*----------------------------------------------------------------*/
 #menus{
@@ -423,7 +477,6 @@ h4{
 	margin-bottom: 0px;
 	background-color: #4c5760;
 }
-
 #productos{
 	width: 960px;
 	height: 100%;
@@ -454,7 +507,6 @@ h4{
 #p2 img{
 	height: auto;
 }
-
 #nombreP{
 	width: 380px;
 	height: 25px;
@@ -483,7 +535,6 @@ h4{
 	float: none;
 	background-color: #000000;
 }
-
 #total{
 	color: #ffffff;
 	padding: 5px 5px;
@@ -494,7 +545,6 @@ h4{
 	float: left;
 	text-align: center;
 }
-
 .precio{
 	color: #ffffff;
 	width: auto;
@@ -528,7 +578,6 @@ h4{
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
-
 #formulario{
 	width: 450px;
 	height: 300px;
@@ -549,7 +598,6 @@ h4{
 #datos ul{
 	list-style-type: none;
 }
-
 input{
 	width: 280px;
 	height: 20px;
@@ -562,7 +610,6 @@ input{
 	font-family:'rose';
 	font-size: 15px;
 }
-
 #texto{
 	height: 110px;
 	width: 280px;
@@ -573,7 +620,6 @@ input{
 	font-family:'rose';
 	font-size: 15px;
 }
-
 #btnEnviar{
 	width: 100px;
 	height: 35px;
@@ -588,7 +634,6 @@ input{
 	background-color: #C8B888;
 	margin-left: 0px;
 }
-
 #btnEnviar:hover{
 	background-color: #b2945b;
 }
@@ -612,7 +657,6 @@ header{
 	width: 580px;
 	height: 150px;
 }
-
 #logotipo{
 	width: 350px;
 	height: 90px;
@@ -621,10 +665,9 @@ header{
 #logotipo h1{
 	font-size: 55px;
 }
-
 #bienvenida{
 	width: 250px;
-	margin-left: 165px;
+	margin-left: 100px;
 	margin-top: 18px;
 }
 #saldo{
@@ -638,6 +681,30 @@ header{
 }
 #saldoDis{
 	font-size: 22px;
+}
+#log{
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-top: 35px;
+}
+.singIn{
+	font-size: 12px;
+}
+.cart{
+	margin-left: 140px;
+	margin-top: 16px;
+}
+.cart-img img{
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 55px;
+}
+.cart-cuerpo{
+	font-size: 15px;
+}
+#add-carro{
+	font-size: 13px;
 }
 #redes{
 	width: 40px;
@@ -793,6 +860,22 @@ h4{
 	margin-left: 245px;
 }
 /*----------------------------------------------------------------*/
+/*REGISTRO MODAL*/
+/*----------------------------------------------------------------*/
+#contactoTitle{
+	margin-left: -25%;
+}
+.input{
+  font-size: 15px;
+}
+.confirm{
+  width: auto;
+  height: 30px;
+	margin-left: 5px;
+	font-size: 15px;
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 /*MENU*/
 /*----------------------------------------------------------------*/
 #menus{
@@ -865,17 +948,57 @@ h4{
 	}
 	#nombre{
 		margin-top: 0px;
-		font-size: 15px;
+		font-size: 12px;
 	}
 	#saldoDis{
 		font-size: 18px;
 	}
+	#log{
+		width: 80px;
+		height: auto;
+		float: right;
+		margin-top: 0px;
+	}
+	.singIn{
+		font-size: 10px;
+	}
+	.cart{
+		width: 100px;
+		height: 30px ;
+		margin-left: 0px;
+		float: right;
+	}
+	.cart-img{
+		width: auto;
+		height: auto;
+	}
+	.cart-img img{
+		height: 12px;
+		margin-top: 10px;
+		margin-left: 0px;
+		margin-right: -5px;
+	}
+	#cantidad{
+		display: none;
+	}
+	#cantidad2{
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+	.cart-cuerpo{
+		font-size: 12px;
+	}
+	#add-carro{
+		height: 20px;
+		font-size: 12px;
+		border-radius: 5px;
+	}
 	#redes{
-		width: 80%;
+		width: 100px;
 		height: 20px;
 		float: none;
 		text-align: center;
-		margin-right: 20px;
+		margin-left: -55px;
 	}
 	#redes ul li{
 		margin-left: 22px;
@@ -1041,11 +1164,33 @@ h4{
 	}
 
 	/*----------------------------------------------------------------*/
+	/*REGISTRO MODAL*/
+	/*----------------------------------------------------------------*/
+	#contactoTitle{
+	  font-size: 15px;
+		margin-left: 10%
+	}
+	.input{
+	  width: 75%;
+	  height: 12px;
+		margin-left: 3%;
+	  font-size: 10px;
+	}
+	.confirm{
+	  width: auto;
+	  height: 20px;
+	  margin-top: 2%;
+		margin-left: 4%;
+		font-size: 10px;
+	}
+	/*----------------------------------------------------------------*/
+	/*----------------------------------------------------------------*/
 	/*MENU*/
 	/*----------------------------------------------------------------*/
 	#menus{
 		width: 90%;
-		height: auto;
+		height: 2000px;
+		overflow: scroll;
 	}
 	#productos{
 		width: 100%;
@@ -1056,6 +1201,7 @@ h4{
 	#p1{
 		width: 100%;
 		margin-left: 0px;
+		margin-bottom: 40px;
 		float: none;
 	}
 	#p1 img{
@@ -1065,6 +1211,7 @@ h4{
 		width: 100%;
 		height: auto;
 		margin-right: 0px;
+		margin-bottom: 40px;
 		float: none;
 	}
 	#p2 img{
