@@ -56,9 +56,24 @@
 		<div id="foto2">
 			<img id="granos" src="img/granos.jpg">
 		</div>
-		<div id="foto3">
-			<img id="grupal" src="img/fotoP.jpg">
-		</div>
+
+		<section id="reproductor">
+			<video id="medio" width="720" height="400" autoplay muted>
+					<source src="video/coffee0.mp4">
+					<source src="video/coffee0.ogg">
+			</video>
+			<nav id="controles">
+				<div id="botones">
+					<button type="button" id="reproducir">▶</button>
+				</div>
+				<div id="barra">
+					<div id="progreso"></div>
+				</div>
+				<div style="clear: both"></div>
+			</nav>
+		</section>
+
+
 	</div>
 </section>
 <footer>
@@ -87,6 +102,7 @@
 
 	<script type="text/javascript" src="js/index.js"></script>
 	<script src="js/registro-form.js"></script>
+	<script src="js/reproductor.js"></script>
 	</body>
-	
+
 </html>

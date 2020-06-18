@@ -318,16 +318,55 @@ header{
 	width: 320px;
 	height: 320px;
 }
-#foto3{
+
+#reproductor{
 	width: 570px;
-	height: 400px;
 	float: right;
-	margin-top: 25px;
+	margin-top:-10px;
 	margin-right: 20px;
+	margin-bottom: 0px;
 	padding: 2px 2px 2px 2px;
-	background-color: #ffffff;
 }
-#grupal{
+
+#controles{
+	margin-top: -40px;
+	height: 35px;
+}
+#botones{
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+#barra{
+position: relative;
+float: left;
+width: 500px;
+height: 5px;
+padding: 2px;
+margin-left: 20px;
+margin-top: 13.5px;
+border: 1px solid #695958;
+background-color: #EEEEEE;
+border-radius:5px;
+}
+#progreso{
+position: absolute;
+width: 0px;
+height: 6px;
+background-color: #695958;
+border-radius:5px;
+}
+#reproducir{
+	background-color: #4c5760;
+	border:none;
+	padding:5px 10px;
+	border-radius:50px;
+	outline: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+#medio{
 	width: 570px;
 	height: 400px;
 }
@@ -814,15 +853,19 @@ header{
 #granos{
 	height: auto;
 }
-#foto3{
-	width: 560px;
-	height: auto;
+#reproductor{
 	float: none;
+	margin-top:20px;
 	margin-right: 0px;
-	margin-left: 8px;
-	padding: 2px 2px 0px 4px;
+	margin-left: 10px;
+	padding: 0px;
 }
-#grupal{
+
+#controles{
+	margin-top: 0px;
+}
+
+#medio{
 	width: 555px;
 	height: auto;
 	margin-left: 2px;
@@ -1116,15 +1159,29 @@ h4{
 		height: auto;
 		margin-top: 5px;
 	}
-	#foto3{
-		width: 96%;
-		height: auto;
+	#reproductor{
+		width: 98%;
 		float: none;
+		margin-top:10px;
 		margin-right: 0px;
-		margin-left: 3px;
-		margin-bottom: 10px;
+		margin-left: 1px;
+		margin-bottom: 20px;
+		padding: 2px 2px;
 	}
-	#grupal{
+
+	#controles{
+		margin-top: 0px;
+		height: 35px;
+	}
+
+	#barra{
+		visibility: hidden;
+	}
+
+	#reproducir{
+		font-size: 15px;
+	}
+	#medio{
 		width: 100%;
 		height: auto;
 		margin-top: 5px;
