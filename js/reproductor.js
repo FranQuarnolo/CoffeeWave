@@ -11,11 +11,11 @@ function iniciar() {
 function presionar(){
   if(!medio.paused && !medio.ended) {
     medio.pause();
-    reproducir.innerHTML='▶';
+    reproducir.innerHTML='<span class="icon-play3"></span>';
     window.clearInterval(bucle);
   }else{
     medio.play();
-    reproducir.innerHTML='❙❙';
+    reproducir.innerHTML='<span class="icon-pause2"></span>';
     bucle=setInterval(estado, 1000);
   }
 }

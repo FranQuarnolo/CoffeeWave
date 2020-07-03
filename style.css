@@ -1,9 +1,20 @@
+html{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	margin-top: -20px;
 	position: relative;
+	background-color: #3d3c3a;
 }
+
+
 /*----------------------------------------------------------------*/
 /*ENCABEZADO*/
 /*----------------------------------------------------------------*/
@@ -118,7 +129,8 @@ header{
 	height: 30px;
 	width: 150px;
 	margin-top: 5px;
-	margin-left: 35px;
+	margin-bottom: 20px;
+	margin-left: 32%;
 	color: #ffffff;
 	font-family:'deco';
 	font-size: 15px;
@@ -301,22 +313,81 @@ header{
 }
 
 #irMenu a:hover{
+	width: 223px;
+	height: 42px;
 	background-color: #c8b888;
 	color: #000000;
 	cursor: pointer;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in;
 }
-#foto2{
+
+#cafe-container{
 	width: 320px;
 	height: 320px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 40px;
 	margin-top: 30px;
-	padding: 2px 2px 2px 2px;
-	background-color: #ffffff;
 }
-#granos{
-	width: 320px;
-	height: 320px;
+.humo1{
+	width: 50px;
+	height: 120px;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 20px;
+	float: left;
+	animation-name: humeante;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes humeante {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+.humo2{
+	width: 40px;
+	height: 100px;
+	position: absolute;
+	margin-left: 190px;
+	margin-top: 40px;
+	float: right;
+	animation-name: humeante2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-direction: alternate;
+}
+
+
+@keyframes humeante2 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-55px); }
+}
+
+#humo1{
+	width: 45px;
+	height: 120px;
+}
+#humo2{
+	width: 30px;
+	height: 100px;
+}
+
+
+.taza{
+	width: 100%;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 10px;
+
+}
+#cafe1{
+	width: 260px;
+	height: auto;
 }
 
 #reproductor{
@@ -339,23 +410,22 @@ header{
 	height: 20px;
 }
 #barra{
-position: relative;
-float: left;
-width: 500px;
-height: 5px;
-padding: 2px;
-margin-left: 20px;
-margin-top: 13.5px;
-border: 1px solid #695958;
-background-color: #EEEEEE;
-border-radius:5px;
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 6px;
+	margin-left: 20px;
+	margin-top: 13.5px;
+	background-color: #EEEEEE;
+	border-radius:5px;
 }
 #progreso{
-position: absolute;
-width: 0px;
-height: 6px;
-background-color: #695958;
-border-radius:5px;
+	position: absolute;
+	width: 0px;
+	height: 6px;
+	background-color: #695958;
+	border-style: solid 1px;
+	border-color: #000000;
 }
 #reproducir{
 	background-color: #4c5760;
@@ -427,17 +497,17 @@ h4{
   overflow: hidden;
   background: #d8dbe2;
   background-color: rgba(0,0,0,0.4);
-  transition: all 0.5s;
+  transition-duration:  1s;
 }
 /* Modal Contenido */
 .modal-content {
   background-color: #4c5760;
   margin: 15% auto;
   padding: 0px;
-  margin-top: 75px;
+  margin-top: 60px;
   border: 1px solid #888;
   width: 40%;
-  height: auto;
+  height: 520px;
   border-style: none;
   border-radius: 2%;
 	text-align: center;
@@ -451,7 +521,7 @@ h4{
   font-weight: bold;
   text-decoration: none;
   text-decoration-line: none;
-  transition: all 3s;
+  transition-duration: 3s;
 }
 .close:hover,
 .close:focus {
@@ -469,11 +539,12 @@ h4{
 }
 .input{
   width: 70%;
-  height: 15px;
-	margin-left: 3%;
+  height: 35px;
+	margin-left: 15%;
   margin-top: 2%;
   background-color: #d8dbe2;
   border-style: none;
+	float: left;
   font-family:'rose';
   font-size: 20px;
   border-radius: 2%;
@@ -483,12 +554,14 @@ h4{
   outline: none;
 }
 .confirm{
-  width: 25%;
+  width: 30%;
   height: 30px;
-  margin-top: 2%;
+  margin-top: 10px;
+	margin-left: 35%;
+	float: left;
   background-color: #695958;
 	font-family:'deco';
-	font-size: 20px;
+	font-size: 18px;
 	color: #ffffff;
 	background-color: #695958;
 	border-radius: 10px;
@@ -509,45 +582,79 @@ h4{
 /*----------------------------------------------------------------*/
 #menus{
 	width: 960px;
-	height: 2320px;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	background-color: #4c5760;
 }
-#productos{
-	width: 960px;
-	height: 100%;
-	padding: 0px;
-	margin-left: 0px;
+
+.products-container{
+	display: flex;
+	flex-wrap:wrap;
+	padding: 1%;
+}
+.product{
+	width: 50%;
+	padding: 1%;
+	margin-left: -5px;
 }
 
-/*PRODUCTO 1*/
-#p1{
-	width: 400px;
+.product img{
+	max-width: 100%;
 	height: auto;
-	margin-bottom: 10px;
-	margin-left: 40px;
-	text-align: center;
-	float: left;
+	margin-left: 10px;
 }
-#p1 img{
-	height: auto;
+
+.contenedor{
+	position: relative;
+	width: 100%;
 }
-#p2{
-	width: 400px;
-	height: auto;
-	margin-bottom: 10px;
-	margin-right: 40px;
-	text-align: center;
-	float: right;
-}
-#p2 img{
+.image{
+	display: block;
+	width: 100%;
 	height: auto;
 }
+
+.over{
+	position: absolute;
+	bottom: 3px;
+	left: 10px;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .7s ease;
+}
+
+.contenedor:hover .over{
+	height: 100%;
+}
+
+.texto{
+	color: white;
+	font-family: 'arial';
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
 #nombreP{
-	width: 380px;
+	width: 100%;
 	height: 25px;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -561,13 +668,8 @@ h4{
 	font-size: 20px;
 	text-align: center;
 }
-#imagenP{
-	width: 380px;
-	height: 260px;
-	text-align-last: center;
-}
 #precioCaja{
-	width: 380px;
+	width: 100%;
 	height: 30px;
 	margin-left: 10px;
 	padding: 0px;
@@ -575,6 +677,8 @@ h4{
 	background-color: #000000;
 }
 #total{
+	width: 75%;
+	height: 30px;
 	color: #ffffff;
 	padding: 5px 5px;
 	font-family:'deco';
@@ -582,7 +686,7 @@ h4{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	float: left;
-	text-align: center;
+	text-align: left;
 }
 .precio{
 	color: #ffffff;
@@ -743,7 +847,11 @@ header{
 	font-size: 15px;
 }
 #add-carro{
-	font-size: 13px;
+	width: 120px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 25%;
+	font-size: 10px;
 }
 #redes{
 	width: 40px;
@@ -783,6 +891,14 @@ header{
 }
 #menu a:hover{
 	height: 50px;
+}
+
+#cafe-container{
+	width: 320px;
+	height: 320px;
+	float: left;
+	margin-left: 25%;
+	margin-top: 30px;
 }
 #btnInicio{
 	margin-left: -40px;
@@ -914,7 +1030,7 @@ h4{
 .confirm{
   width: auto;
   height: 30px;
-	margin-left: 5px;
+	margin-left: 30%;
 	font-size: 15px;
 }
 /*----------------------------------------------------------------*/
@@ -923,20 +1039,27 @@ h4{
 /*----------------------------------------------------------------*/
 #menus{
 	width: 580px;
-	height: 4475px;
+	height: auto;
 }
-#productos{
-	width: 580px;
+.texto{
+  font-size: 11px;
 }
-/*PRODUCTO 1*/
-#p1{
-	margin-left: 90px;
+
+#nombreP p{
+		font-size: 15px;
 }
-#p2{
-	margin-right: 90px;
+#precioCaja{
+	width: 100%;
+	height: 25px;
 }
 #total{
-	width: 300px;
+	width: 75%;
+	height: 25px;
+	font-size: 12px;
+}
+.precio{
+	margin-right: 0px;
+	font-size: 16px;
 }
 /*----------------------------------------------------------------*/
 /*CONTACTO*/
@@ -945,8 +1068,14 @@ h4{
 	width: 580px;
 	height: 590px;
 }
+#titulo{
+	margin-right: 7%;
+}
 #formulario{
-	margin-left: 65px;
+	margin-left: 13.5%;
+}
+#btnEnviar{
+	margin-right: 10%;
 }
 /*----------------------------------------------------------------*/
 }
@@ -1033,7 +1162,10 @@ h4{
 	}
 	#add-carro{
 		height: 20px;
-		font-size: 12px;
+		width: 100px;
+		font-size: 8px;
+		margin-top: 0px;
+		margin-left: 35%;
 		border-radius: 5px;
 	}
 	#redes{
@@ -1080,6 +1212,22 @@ h4{
 	#menu a:hover{
 		height: 30px;
 	}
+
+	#cafe-container{
+		width: 100%;
+		height: auto;
+		float: left;
+		margin-left: -18px;
+		margin-top: 30px;
+	}
+	.humo1{
+		margin-left: 35%;
+	}
+	.humo2{
+		margin-left: 60%;
+
+	}
+
 	#btnInicio{
 		margin-left: -40px;
 	}
@@ -1164,7 +1312,7 @@ h4{
 		float: none;
 		margin-top:10px;
 		margin-right: 0px;
-		margin-left: 1px;
+		margin-left: 3px;
 		margin-bottom: 20px;
 		padding: 2px 2px;
 	}
@@ -1230,14 +1378,21 @@ h4{
 	.input{
 	  width: 75%;
 	  height: 12px;
-		margin-left: 3%;
+		margin-left: 12%;
 	  font-size: 10px;
+	}
+
+	.modal-content {
+	  background-color: #4c5760;
+	  margin-left: 15%;
+	  height: 300px;
+
 	}
 	.confirm{
 	  width: auto;
 	  height: 20px;
 	  margin-top: 2%;
-		margin-left: 4%;
+		margin-left: 30%;
 		font-size: 10px;
 	}
 	/*----------------------------------------------------------------*/
@@ -1246,50 +1401,35 @@ h4{
 	/*----------------------------------------------------------------*/
 	#menus{
 		width: 90%;
-		height: 2000px;
-		overflow: scroll;
-	}
-	#productos{
-		width: 100%;
-		height: 100%;
-		margin-left: 0px;
-	}
-	/*PRODUCTO 1*/
-	#p1{
-		width: 100%;
-		margin-left: 0px;
-		margin-bottom: 40px;
-		float: none;
-	}
-	#p1 img{
-		width: 90%;
-	}
-	#p2{
-		width: 100%;
 		height: auto;
-		margin-right: 0px;
-		margin-bottom: 40px;
-		float: none;
 	}
-	#p2 img{
+	.product{
 		width: 90%;
+		padding: 1%;
+		margin-left: 2%;
+		transition: 0.5s;
 	}
+	.texto{
+	  font-size: 9px;
+	}
+
 	#nombreP{
-		width: 96%;
+		width: 100%;
 		height: 20px;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 	#nombreP p{
 		font-size: 13px;
 	}
 	#precioCaja{
-		width:96% ;
+		width:100% ;
 		height: 25px;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 	#total{
 		font-size: 10px;
 		margin-top: 2px;
+		margin-bottom: -6px;
 	}
 	.precio{
 		font-size: 13px;
@@ -1308,12 +1448,12 @@ h4{
 		font-size: 13px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		margin-left: 0px;
+		margin-right: 10%;
 	}
 	#formulario{
 		width: 100%;
 		height: auto;
-		margin-left: 0px;
+		margin-left: 4%;
 	}
 	#datos{
 		width: 90%;
@@ -1338,11 +1478,12 @@ h4{
 		font-size: 12px;
 	}
 	#btnEnviar{
-		width: 100%;
+		width: 90%;
 		height: 35px;
 		border-style: solid;
 		border-radius: 7px;
 		margin-top: 20px;
+		margin-right: 8.5%;
 		font-size: 15px;
 	}
 /*----------------------------------------------------------------*/

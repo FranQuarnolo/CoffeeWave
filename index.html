@@ -4,6 +4,7 @@
 	<title>Coffee Wave</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="icons.css">
 	<link rel="icon" type="image/png" href="img/icons/taza.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -53,18 +54,28 @@
 				</ul>
 			</nav>
 		</div>
-		<div id="foto2">
-			<img id="granos" src="img/granos.jpg">
+		<div id="cafe-container">
+			<div class="humo1">
+				<img id="humo1" src="img/icons/humo1.png" >
+			</div>
+			<div class="humo2">
+				<img id="humo2" src="img/icons/humo2.png" >
+			</div>
+
+			<div class="taza">
+				<img id="cafe1" src="img/icons/Taza1.png">
+			</div>
+
 		</div>
 
 		<section id="reproductor">
-			<video id="medio" width="720" height="400" autoplay muted>
+			<video id="medio" width="720" height="400" muted>
 					<source src="video/coffee0.mp4">
 					<source src="video/coffee0.ogg">
 			</video>
 			<nav id="controles">
 				<div id="botones">
-					<button type="button" id="reproducir">▶</button>
+					<button type="button" id="reproducir"><span class="icon-play3"></span></button>
 				</div>
 				<div id="barra">
 					<div id="progreso"></div>
