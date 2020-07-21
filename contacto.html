@@ -32,8 +32,20 @@
 		</ul>
 	</nav>
 
+
+	<canvas id="canvas" width="960" height="75">
+		<p>Su navegador no soporta CANVAS</p>
+		<!-- Dibujar un elemento utilizando <canvas> e incorporarla en el
+		sitio que vienen trabajando para el proyecto.
+		Pueden utilizar las imágenes que necesiten como textura de relleno del
+		objeto creado.
+		IMPORTANTE: el objeto dibujado debe integrarse a la temática elegida
+		para el sitio. -->
+	</canvas>
+
+
 	<form id="formulario">
-		<h1 id="titulo">Contactanos!</h1>
+
 		<fieldset id="datos">
 			<ul id="">
 				<li><input id="user" type="text" name="nombre" placeholder="Ingrese un Nombre" minlength="5" maxlength="20" pattern="[A-Za-z ]{1,32}" required></li>
@@ -44,6 +56,8 @@
 		<input id="btnEnviar" type="submit" name="enviar" value="Enviar" placeholder="Enviar">
 
 	</form>
+
+	<canvas id="lienzo" width="960" height="100"></canvas>
 </section>
 <footer>
 	<h4>CW</h4>
@@ -54,5 +68,7 @@
 </footer>
 
 <script type="text/javascript" src="js/contacto.js"></script>
+<script type="text/javascript" src="js/dibujoCanvas.js"></script>
+<script type="text/javascript" src="js/patron.js"></script>
 </body>
 </html>

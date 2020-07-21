@@ -14,7 +14,6 @@ body{
 	background-color: #3d3c3a;
 }
 
-
 /*----------------------------------------------------------------*/
 /*ENCABEZADO*/
 /*----------------------------------------------------------------*/
@@ -51,7 +50,6 @@ header{
 	font-size: 60px;
 	margin-top: 20px;
 }
-
 #bienvenida{
 	width: 300px;
 	height: 30px;
@@ -67,7 +65,6 @@ header{
 	float: left;
 	text-align:center;
 }
-
 #nombre{
 	font-family:'deco';
 	font-size: 20px;
@@ -204,6 +201,7 @@ header{
 #menu ul li{
 	display: inline;
 }
+/* MENUS "Inicio", "Menu" & "Contacto" */
 #menu ul li a{
 	display: inline-block;
 	height: 40px;
@@ -292,6 +290,7 @@ header{
 #irMenu ul li{
 	display: inline;
 }
+/* BOTON IR AL MENU */
 #irMenu ul li a{
 	display: inline-block;
 	height: 40px;
@@ -325,19 +324,117 @@ header{
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
 }
-
+/* CONTENEDOR DE GRANOS CAFE --------------------------------------------++++++++++++++*/
+.granosVoladores{
+	width: 320px;
+	height: 320px;
+	margin-left: 40px;
+	margin-top: 30px;
+	float: left;
+	position: relative;
+	z-index: 1;
+}
+/* SEPARACION DE GRANOS */
+.svgGrano{
+	margin: 23px;
+}
+/* ANIMACION DE LLUVIA DE GRANOS  */
+/*------------------------------------------------*/
+#grano1{
+	animation: g1 ease-in-out 5.1s infinite;
+}
+@keyframes g1 {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	10% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+	transform: translateY(279px);
+	}
+}
+#grano2{
+	animation: g2 ease-in-out 4.8s infinite;
+}
+@keyframes g2 {
+	0% {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+	10% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+	transform: translateY(284px);
+	}
+}
+#grano3{
+	animation: g3 ease-in-out 4.9s infinite;
+	animation-delay: 0.2s;
+}
+@keyframes g3 {
+	0% {
+		transform: translateY(-25px);
+		opacity: 0;
+	}
+	10% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+	transform: translateY(276px);
+	}
+}
+#grano4{
+	animation: g4 ease-in-out 5s infinite;
+}
+@keyframes g4 {
+	0% {
+		transform: translateY(-0px);
+		opacity: 0;
+	}
+	10% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+	transform: translateY(275px);
+	}
+}
+#grano5{
+	animation: g5 ease-in-out 5s infinite;
+}
+@keyframes g5 {
+	0% {
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	10% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+	transform: translateY(285px);
+	}
+}
+/*------------------------------------*/
 #cafe-container{
 	width: 320px;
 	height: 320px;
 	float: left;
-	margin-left: 40px;
-	margin-top: 30px;
+	margin-top: -50px;
+	position: relative;
+	z-index: 1;
 }
 .humo1{
 	width: 50px;
 	height: 120px;
 	position: absolute;
-	margin-left: 100px;
+	margin-left: 110px;
 	margin-top: 20px;
 	float: left;
 	animation-name: humeante;
@@ -345,13 +442,11 @@ header{
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-
+/* ANIMACION DE HUMO2 */
 @keyframes humeante {
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
 }
-
-
 .humo2{
 	width: 40px;
 	height: 100px;
@@ -365,13 +460,11 @@ header{
 	animation-delay: 1s;
 	animation-direction: alternate;
 }
-
-
+/* ANIMACION DE HUMO2 */
 @keyframes humeante2 {
     0% { transform: translateY(0); }
     100% { transform: translateY(-55px); }
 }
-
 #humo1{
 	width: 45px;
 	height: 120px;
@@ -380,20 +473,20 @@ header{
 	width: 30px;
 	height: 100px;
 }
-
-
-.taza{
-	width: 100%;
-	height: 200px;
-	margin-top: 100px;
-	margin-left: 10px;
-
-}
-#cafe1{
+ #cafe1{
 	width: 260px;
 	height: auto;
+	margin-left: 10px;
+	margin-top: 50px;
+	position: relative;
 }
 
+/* PLATO HECHO EN SVG*/
+#base{
+	margin-top: -70px;
+	margin-left: -10px;
+}
+/* REPRODUCTOR */
 #reproductor{
 	width: 570px;
 	float: right;
@@ -401,8 +494,8 @@ header{
 	margin-right: 20px;
 	margin-bottom: 0px;
 	padding: 2px 2px 2px 2px;
+	z-index: 2;
 }
-
 #controles{
 	margin-top: -40px;
 	height: 35px;
@@ -649,14 +742,6 @@ h4{
   transform: translate(-50%, -50%);
   text-align: justify;
 }
-
-
-
-
-
-
-
-
 #nombreP{
 	width: 100%;
 	height: 25px;
@@ -704,32 +789,39 @@ h4{
 	text-align: center;
 }
 
-
 /*----------------------------------------------------------------*/
 /*CONTACTO*/
 /*----------------------------------------------------------------*/
 #contacto{
 	width: 960px;
-	height: 500px;
+	height: 650px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	background-color: #4c5760;
 }
-#titulo{
-	font-family:'deco';
-	font-size: 20px;
-	color: #ffffff;
-	margin-right: 0px;
-	margin-top: 20px;
-	margin-bottom: 5px;
+
+/* CANVAS */
+#canvas{
+		margin-top: 20px;
+		position: relative;
 }
+
+#lienzo{
+		margin-left: -2px;
+		margin-top: 109px;
+		position: relative;
+		z-index: 1;
+}
+
 #formulario{
 	width: 450px;
 	height: 300px;
 	text-align: center;
-	margin-left: 255px;
+	margin-left: 260px;
+	position: relative;
+	z-index: 2;
 }
 #datos{
 	width: 400px;
@@ -740,14 +832,16 @@ h4{
 	border-color: #000000;
 	background-color: #695958;
 	margin-right: 0px;
-	margin-left: 10px;
+	margin-left: 15px;
+	position: relative;
+	z-index: 2;
 }
 #datos ul{
 	list-style-type: none;
 }
 input{
 	width: 280px;
-	height: 20px;
+	height: 30px;
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 0.5px;
@@ -779,7 +873,10 @@ input{
 	font-family:'deco';
 	font-size: 20px;
 	background-color: #C8B888;
-	margin-left: 0px;
+	margin-left: -10px;
+	margin-top: 40px;
+	position: relative;
+	z-index: 2;
 }
 #btnEnviar:hover{
 	background-color: #b2945b;
@@ -872,7 +969,7 @@ header{
 /*----------------------------------------------------------------*/
 #inicio{
 	width: 580px;
-	height: 1980px;
+	height: 2100px;
 }
 #menu{
 	width: 580px;
@@ -898,11 +995,8 @@ header{
 }
 
 #cafe-container{
-	width: 320px;
-	height: 320px;
-	float: left;
 	margin-left: 25%;
-	margin-top: 30px;
+	margin-top: -30px;
 }
 #btnInicio{
 	margin-left: -40px;
@@ -965,14 +1059,18 @@ header{
 	margin-left: 140px;
 	margin-top: 10px;
 }
-#foto2{
-	height: 244px;
+.granosVoladores{
+	width: 580px;
+	height: 470px;
+	margin-left: 0px;
+	margin-top: 10px;
 	float: none;
-	margin-left: 130px;
 }
-#granos{
-	height: auto;
+/* SEPARACION DE GRANOS */
+.svgGrano{
+	margin: 50px;
 }
+
 #reproductor{
 	float: none;
 	margin-top:20px;
@@ -1070,11 +1168,16 @@ h4{
 /*----------------------------------------------------------------*/
 #contacto{
 	width: 580px;
-	height: 590px;
+	height: 690px;
 }
-#titulo{
-	margin-right: 7%;
+/* CANVAS */
+#canvas{
+		width: 580px;
 }
+#lienzo{
+		width: 580px;
+}
+
 #formulario{
 	margin-left: 13.5%;
 }
@@ -1218,18 +1321,20 @@ h4{
 	}
 
 	#cafe-container{
-		width: 100%;
+		width: 90%;
 		height: auto;
 		float: left;
-		margin-left: -18px;
-		margin-top: 30px;
+		margin-left: 0%;
+		margin-top: -90px;
 	}
 	.humo1{
 		margin-left: 35%;
 	}
 	.humo2{
 		margin-left: 60%;
-
+	}
+	#base{
+		margin-left: 3%;
 	}
 
 	#btnInicio{
@@ -1299,18 +1404,12 @@ h4{
 		width: 100%;
 		margin-left: -20px;
 	}
-	#foto2{
-		width: 96%;
-		height: auto;
-		float: none;
-		margin-left: 3.7px;
-		margin-top: 40px;
-	}
-	#granos{
+	.granosVoladores{
 		width: 100%;
-		height: auto;
-		margin-top: 5px;
+		margin-left: 0px;
+		margin-top: 15px;
 	}
+
 	#reproductor{
 		width: 98%;
 		float: none;
@@ -1446,18 +1545,24 @@ h4{
 	/*----------------------------------------------------------------*/
 	#contacto{
 		width: 90%;
-		height: 500px;
+		height: 530px;
 	}
-	#titulo{
-		font-size: 13px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		margin-right: 10%;
+	/* CANVAS */
+	#canvas{
+			width: 100%;
+			margin-top: 0px;
 	}
+	#lienzo{
+			width: 100%;
+			margin-left: 0px;
+			margin-top: 20px;
+	}
+
 	#formulario{
 		width: 100%;
 		height: auto;
 		margin-left: 4%;
+		margin-top: 10px;
 	}
 	#datos{
 		width: 90%;
