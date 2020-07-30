@@ -50,6 +50,29 @@ header{
 	font-size: 60px;
 	margin-top: 20px;
 }
+/*-----------------------------------------------------------------------------------------  */
+
+#cajaPedido{
+	width: 150px;
+	height: 30px;
+	float: none;
+	margin-left: 400px;
+	margin-top: -15px;
+}
+#cajaPedido span{
+	font-family:'deco';
+	font-size: 20px;
+	font-weight: bold;
+	color: #EEE4E1;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+#cajaPedido span:hover{
+	color: #000000;
+	transition: 0.2s;
+}
+/*-----------------------------------------------------------------------------------------  */
+
 #bienvenida{
 	width: 300px;
 	height: 30px;
@@ -324,7 +347,7 @@ header{
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
 }
-/* CONTENEDOR DE GRANOS CAFE --------------------------------------------++++++++++++++*/
+/* CONTENEDOR DE GRANOS CAFE */
 .granosVoladores{
 	width: 320px;
 	height: 320px;
@@ -339,7 +362,7 @@ header{
 	margin: 23px;
 }
 /* ANIMACION DE LLUVIA DE GRANOS  */
-/*------------------------------------------------*/
+/*--------------------------------*/
 #grano1{
 	animation: g1 ease-in-out 5.1s infinite;
 }
@@ -613,19 +636,19 @@ h4{
   color: #000000;
   float: right;
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   font-family:'deco';
   font-weight: bold;
   text-decoration: none;
   text-decoration-line: none;
-  transition-duration: 3s;
+  transition-duration: 0.5s;
 }
 .close:hover,
 .close:focus {
   color: #970000;
   text-decoration: none;
   cursor: pointer;
-  font-size: 32px;
+  font-size: 20px;
 }
 #contactoTitle{
   font-family:'deco';
@@ -672,6 +695,180 @@ h4{
   transition-duration: 0.1s;
   cursor: pointer;
 }
+
+
+/*----------------------------------------------------------------*/
+/*PEDIDO MODAL*/
+/*----------------------------------------------------------------*/
+/* Modal Contenido */
+.modal-content2 {
+	width: 70%;
+  height: 500px;
+	background-color: #4c5760;
+  margin: 15% auto;
+  padding: 0px;
+  margin-top: 60px;
+  border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+  border-radius: 1%;
+	text-align: center;
+}
+.close {
+  color: #ffffff;
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  font-family:'deco';
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration-line: none;
+  transition-duration: 0.5s;
+}
+.close:hover,
+.close:focus {
+  color: #970000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#pedidoTitle{
+	font-family:'deco';
+  font-size: 30px;
+  font-weight: bold;
+  color: #E7D8C9;
+  text-decoration: underline;
+	margin-right: 80%;
+}
+
+.ingreso{
+	width: 40%;
+	height: 300px;
+	margin-top: -15px;
+	float: left;
+}
+.input2{
+	width: 80%;
+  height: 35px;
+	margin-left: 10%;
+  margin-top: 3%;
+  background-color: #d8dbe2;
+  border-style: none;
+	float: left;
+  font-family:'deco';
+  font-size: 17px;
+  border-radius: 2%;
+	vertical-align: middle;
+}
+.input2{
+	outline: none;
+}
+.confirm2{
+  width: 30%;
+  height: 30px;
+  margin-top: 15px;
+	margin-left: 35%;
+	float: left;
+  background-color: #695958;
+	font-family:'deco';
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #695958;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	outline: none;
+}
+.confirm2:hover{
+  background-color: #c8b888;
+	color: #000000;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+#cajadatos{
+	width: 58%;
+	height: 390px;
+	margin-top: -10px;
+	margin-right: 10px;
+	float: right;
+	text-align: left;
+	border-style: dashed ;
+	border-width: 4px;
+	border-color: #695958;
+	background-color: #E7D8C9;
+	overflow: scroll;
+	font-family:'deco';
+	font-size: 15px;
+	color: #000;
+}
+#cajadatos p{
+	font-family:'deco';
+	font-size: 15px;
+	text-decoration: underline;
+	color: #000;
+}
+#borrarTodo{
+	width: 30%;
+	height: 30px;
+	background-color: #695958;
+	font-family:'deco';
+	font-size: 15px;
+	color: #000000;
+	margin-top: 5px;
+	margin-left: 70%;
+	background-color: #695958;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #ffffff;
+}
+#borrarTodo:hover{
+	background-color: #4c5760;
+	color: #ffffff;
+	border-color: #970000;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+#listado{
+	width: 97%;
+	height: 50px;
+	background-color: #ffffff;
+	margin-top: -20%;
+	margin: 5px;
+}
+
+#borrarP{
+	width: 25px;
+	height: 25px;
+	border-style: solid;
+	border-radius: 50px;
+	border-color: #000000;
+	margin-right: 15px;
+	margin-top: -5px;
+	float: right;
+	outline: none;
+	font-family:'deco';
+	font-size: 13px;
+	color: #000000;
+	background-color: #8c8b89;
+}
+#borrarP:hover{
+	background-color: #000000;
+	color: #ffffff;
+	border-color: #ffffff;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
