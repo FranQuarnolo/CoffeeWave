@@ -10,8 +10,15 @@ function nuevoitem(){
   var nombre=document.getElementById('nombrePedido').value;
   var fecha=document.getElementById('fechaPedido').value;
   var precio=document.getElementById('precioPedido').value;
+
   console.log(id,nombre,fecha,precio);
-  sessionStorage.setItem(id,nombre,fecha,precio);
+  var item = sessionStorage.getItem(id);
+  if (item == undefined || item == null) {
+    sessionStorage.setItem(id,nombre+" "+fecha+"<br>          "+precio+" $");
+  }else {
+    alert("El id ya existe!");
+  }
+
   mostrar();
   document.getElementById('codigoPedido').value='';
   document.getElementById('nombrePedido').value='';
@@ -27,10 +34,9 @@ function mostrar(){
   for(var f=0;f<sessionStorage.length;f++){
     var id=sessionStorage.key(f);
     var nombre=sessionStorage.getItem(id);
-    var fecha=sessionStorage.getItem(id);
-    var precio=sessionStorage.getItem(id);
 
-    cajadatos.innerHTML+='<div id="listado">'+id+' - '+nombre+' - '+fecha+' - '+precio+'<br/><button id="borrarP" onclick="eliminar(\''+id+'\')">X</button></div>';
+
+    cajadatos.innerHTML+='<div id="listado">'+id+' - '+nombre+'<br/><button id="borrarP" onclick="eliminar(\''+id+'\')">X</button></div>';
   }
 
 }
