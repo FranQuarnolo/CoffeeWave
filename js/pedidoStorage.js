@@ -14,7 +14,7 @@ function nuevoitem(){
   console.log(id,nombre,fecha,precio);
   var item = sessionStorage.getItem(id);
   if (item == undefined || item == null) {
-    sessionStorage.setItem(id,nombre+" "+fecha+"<br>          "+precio+" $");
+    sessionStorage.setItem(id,nombre+"  "+fecha+"  "+precio+" $");
   }else {
     alert("El id ya existe!");
   }
@@ -36,7 +36,7 @@ function mostrar(){
     var nombre=sessionStorage.getItem(id);
 
 
-    cajadatos.innerHTML+='<div id="listado">'+id+' - '+nombre+'<br/><button id="borrarP" onclick="eliminar(\''+id+'\')">X</button></div>';
+    cajadatos.innerHTML+='<div id="listado">'+id+' -  '+nombre+'<br/><button id="borrarP" onclick="eliminar(\''+id+'\')">X</button></div>';
   }
 
 }
